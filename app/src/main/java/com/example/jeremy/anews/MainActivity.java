@@ -56,16 +56,6 @@ public class MainActivity extends AppCompatActivity implements
         if (id == R.id.action_settings) {
             loadFragment(NewsFragment.newInstance("", ""));
 
-/*
-            createDummyNews();
-            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-            adapter = new NewsDataAdapter(news);
-            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
-            recyclerView.setLayoutManager(layoutManager);
-            recyclerView.setAdapter(adapter);
-            recyclerView.setItemAnimator(new DefaultItemAnimator());
-*/
-
         }
         else if (id == R.id.action_user) {
             loadFragment(Profile.newInstance("", ""));
